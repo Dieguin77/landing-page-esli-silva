@@ -1,4 +1,4 @@
-# 🏛️ Dr. Esli Silva - Site Institucional
+# 🏛️ Dr. Esli Silva - Landing Page
 
 Site institucional profissional para advogado especialista em Direito Previdenciário.
 
