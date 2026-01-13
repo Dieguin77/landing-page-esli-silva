@@ -267,6 +267,79 @@ const animateValue = (element, start, end, duration) => {
     window.requestAnimationFrame(step);
 };
 
+// ==========================================
+// EFEITOS PREMIUM DA HERO SECTION
+// ==========================================
+
+// Criar Partículas Douradas
+function createParticles() {
+    const particlesContainer = document.getElementById('particles');
+    if (!particlesContainer) return;
+    
+    const particleCount = 30;
+    
+    for (let i = 0; i < particleCount; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'particle';
+        
+        // Posição horizontal aleatória
+        particle.style.left = Math.random() * 100 + '%';
+        
+        // Tamanho aleatório
+        const size = Math.random() * 4 + 2;
+        particle.style.width = size + 'px';
+        particle.style.height = size + 'px';
+        
+        // Delay e duração aleatórios
+        particle.style.animationDelay = Math.random() * 8 + 's';
+        particle.style.animationDuration = (Math.random() * 4 + 6) + 's';
+        
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Efeito Parallax na Hero
+function initParallax() {
+    const heroBackground = document.querySelector('.hero-background');
+    const hero = document.querySelector('.hero');
+    
+    if (!heroBackground || !hero) return;
+    
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        const heroHeight = hero.offsetHeight;
+        
+        // Só aplica parallax enquanto a hero está visível
+        if (scrolled < heroHeight) {
+            const parallaxSpeed = 0.4;
+            heroBackground.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+        }
+    });
+}
+
+// Esconder indicador de scroll após rolar
+function initScrollIndicator() {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (!scrollIndicator) return;
+    
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 100) {
+            scrollIndicator.style.opacity = '0';
+            scrollIndicator.style.pointerEvents = 'none';
+        } else {
+            scrollIndicator.style.opacity = '1';
+            scrollIndicator.style.pointerEvents = 'auto';
+        }
+    });
+}
+
+// Inicializar todos os efeitos premium
+document.addEventListener('DOMContentLoaded', () => {
+    createParticles();
+    initParallax();
+    initScrollIndicator();
+});
+
 // Google Analytics (placeholder - adicione seu ID)
 // window.dataLayer = window.dataLayer || [];
 // function gtag(){dataLayer.push(arguments);}
@@ -275,4 +348,4 @@ const animateValue = (element, start, end, duration) => {
 
 // Log de carregamento
 console.log('Site do Dr. Esli Silva carregado com sucesso!');
-console.log('Versão: 2.0 - Aprimorada');
+console.log('Versão: 3.0 - Premium Edition');

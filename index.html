@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header/Navegação -->
@@ -62,52 +62,45 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Fundo com imagem do perfil (nítida) -->
+        <div class="hero-background">
+            <img src="img/perfil.jpeg" alt="" class="hero-bg-image">
+        </div>
         <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Dr. Esli Silva</h1>
-                <p class="hero-subtitle">Advogado Especialista em Demandas Previdenciárias</p>
-                <p class="hero-description">
-                    Atuação em todo o território nacional com soluções inovadoras e descomplicadas para cada caso.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">+7</span>
-                        <span class="stat-label">Anos de Experiência</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Dedicação ao Cliente</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">Nacional</span>
-                        <span class="stat-label">Atuação em Todo Brasil</span>
-                    </div>
-                </div>
-                <a href="#contato" class="btn-primary">Agende uma Consulta</a>
-                <div class="hero-badges">
-                    <div class="badge-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                        <span>Atendimento Humanizado</span>
-                    </div>
-                    <div class="badge-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                        </svg>
-                        <span>Primeira Consulta Gratuita</span>
-                    </div>
-                    <div class="badge-item">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
-                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                        </svg>
-                        <span>100% Seguro e Confidencial</span>
-                    </div>
-                </div>
+        
+        <!-- Partículas douradas -->
+        <div class="hero-particles" id="particles"></div>
+        
+        <!-- Moldura elegante -->
+        <div class="hero-frame"></div>
+        
+        <!-- Conteúdo centralizado -->
+        <div class="hero-center-content">
+            <!-- Linha decorativa superior -->
+            <div class="hero-decorative-line"></div>
+            
+            <!-- Nome -->
+            <h1 class="hero-name">Dr. Esli Silva</h1>
+            
+            <!-- Profissão -->
+            <p class="hero-profession">Levando soluções previdenciárias que transformam vidas.</p>
+            
+            <!-- Botão CTA -->
+            <a href="#contato" class="btn-hero-cta">
+                <span class="btn-text">AGENDE UMA CONSULTA</span>
+                <span class="btn-shine"></span>
+            </a>
+            
+            <!-- Linha decorativa inferior -->
+            <div class="hero-decorative-line"></div>
+        </div>
+        
+        <!-- Indicador de Scroll -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
+            <span>Role para descobrir</span>
         </div>
     </section>
 
@@ -121,10 +114,10 @@
                 <div class="sobre-text">
                     <h2 class="section-title">Sobre o Dr. Esli Silva</h2>
                     <p class="sobre-description">
-                        Dr. Esli Silva é Advogado especialista em demandas Previdenciárias, com atuação em todo o território nacional. 
+                        Dr. Esli Silva é Advogado especialista em demandas Previdenciárias, com atuação em todo o território nacional e Internacional. 
                     </p>
                     <p class="sobre-description">
-                        Atuante no ramo jurídico desde 2019, ou seja há mais de 7 anos e, portanto, consegue empregar soluções inovadoras e descomplicadas para cada caso.
+                        Atuante no ramo jurídico desde 2019, ou seja há mais de 7 anos e portanto, consegue empregar soluções inovadoras e descomplicadas para cada caso.
                     </p>
                     <div class="sobre-highlights">
                         <div class="highlight-item">
@@ -137,7 +130,7 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <polyline points="20 6 9 17 4 12"></polyline>
                             </svg>
-                            <span>Atuação em todo Brasil</span>
+                            <span>Atuação em todo Brasil e Exterior</span>
                         </div>
                         <div class="highlight-item">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -180,12 +173,12 @@
                 <div class="diferencial-item">
                     <div class="diferencial-number">05</div>
                     <h3>Honorários Justos</h3>
-                    <p>Trabalhamos com honorários de êxito. Só pagamos quando você recebe seu benefício.</p>
+                    <p>Trabalhamos com honorários de êxito. Só concluimos quando você recebe seu benefício.</p>
                 </div>
                 <div class="diferencial-item">
                     <div class="diferencial-number">06</div>
-                    <h3>Atuação Nacional</h3>
-                    <p>Atendemos clientes em todo o Brasil, com consultas presenciais e online.</p>
+                    <h3>Atuação Nacional e  Internacional</h3>
+                    <p>Atendemos clientes em todo o Brasil e exterior, com consultas presenciais e online.</p>
                 </div>
             </div>
         </div>
@@ -195,7 +188,7 @@
     <section id="servicos" class="servicos">
         <div class="container">
             <h2 class="section-title center">Principais Serviços</h2>
-            <p class="section-subtitle">Pretendo trabalhar da seguinte forma:</p>
+            <p class="section-subtitle">Trabalhamos da seguinte forma:</p>
             <div class="servicos-grid">
                 <div class="servico-card">
                     <div class="servico-icon">
@@ -244,7 +237,7 @@
     <section id="provas-sociais" class="provas-sociais">
         <div class="container">
             <h2 class="section-title center">Atuação Comprovada</h2>
-            <p class="section-subtitle">Confira alguns dos nossos casos de sucesso</p>
+            <p class="section-subtitle">Confira alguns dos nossos resultados de sucesso</p>
             <div class="provas-grid">
                 <div class="prova-card">
                     <img src="img/prova-social-1.jpeg" alt="Prova Social 1">
@@ -271,7 +264,7 @@
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Para saber se você tem direito a um benefício previdenciário, é necessário analisar seu histórico de contribuições, sua idade e sua condição de saúde. Agende uma consulta gratuita e faremos uma análise completa do seu caso.</p>
+                        <p>Para saber se você tem direito a um benefício previdenciário, é necessário analisar seu histórico de contribuições, sua idade e sua condição de saúde. Agende uma consulta e faremos uma análise completa do seu caso.</p>
                     </div>
                 </div>
 
@@ -325,13 +318,13 @@
 
                 <div class="faq-item">
                     <button class="faq-question">
-                        <span>Vocês atendem em todo o Brasil?</span>
+                        <span>Vocês atendem em todo o Brasil e Exteior?</span>
                         <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
                     <div class="faq-answer">
-                        <p>Sim! Atendemos clientes em todo território nacional. Oferecemos consultas presenciais e online, adaptando-nos às suas necessidades e localização.</p>
+                        <p>Sim! Atendemos clientes em todo território nacional e Internacional. Oferecemos consultas presenciais e online, adaptando-nos às suas necessidades e localização.</p>
                     </div>
                 </div>
             </div>
