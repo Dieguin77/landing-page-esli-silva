@@ -1786,9 +1786,13 @@ img {
         letter-spacing: 1px;
     }
 
-    /* Menos partículas em mobile para performance */
-    .particle:nth-child(n+15) {
-        display: none;
+    /* Desativar partículas completamente em mobile */
+    .hero-particles {
+        display: none !important;
+    }
+    
+    .particle {
+        display: none !important;
     }
 
     .hero-title {
