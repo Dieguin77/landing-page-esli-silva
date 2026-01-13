@@ -1,4 +1,4 @@
-# 🏛️ Dr. Esli Silva - Site Institucional
+# 🏛️ Dr. Esli Silva - Landing Page
 
 Site institucional profissional para advogado especialista em Direito Previdenciário.
 
@@ -168,7 +168,8 @@ Para dúvidas ou suporte sobre o site, entre em contato através dos canais disp
 
 ---
 
-**Desenvolvido com 💙 para Dr. Esli Silva**
+**Desenvolvido
+para Dr. Esli Silva**
 
 Versão: 2.0 - Aprimorada
 Data: Janeiro 2026
