@@ -239,16 +239,9 @@ img {
     }
 }
 
-/* Moldura elegante */
+/* Moldura elegante - DESATIVADO */
 .hero-frame {
-    position: absolute;
-    top: 80px;
-    left: 30px;
-    right: 30px;
-    bottom: 30px;
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    z-index: 2;
-    pointer-events: none;
+    display: none;
 }
 
 .hero-frame::before,
@@ -273,13 +266,9 @@ img {
     border-width: 0 2px 2px 0;
 }
 
-/* Linhas decorativas */
+/* Linhas decorativas - DESATIVADO */
 .hero-decorative-line {
-    width: 60px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--cor-secundaria), transparent);
-    margin: 1.5rem 0;
-    animation: fadeInUp 1s ease 0.2s backwards;
+    display: none;
 }
 
 /* Conteúdo centralizado principal */
