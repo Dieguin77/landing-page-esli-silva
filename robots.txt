@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eslisilvaadvocacia.com.br/sitemap.xml

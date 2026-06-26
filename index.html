@@ -11,34 +11,85 @@
     <!-- SEO Meta Tags -->
     <title>Dr. Esli Silva - Advogado Previdenciário | Especialista em INSS</title>
     <meta name="description" content="Dr. Esli Silva - Advogado especialista em Direito Previdenciário com mais de 7 anos de experiência. Atendimento em todo Brasil. Benefícios negados, revisões e planejamento previdenciário.">
-    <meta name="keywords" content="advogado previdenciário, INSS, benefícios previdenciários, aposentadoria, revisão INSS, benefícios negados, planejamento previdenciário">
     <meta name="author" content="Dr. Esli Silva">
     <meta name="robots" content="index, follow">
-    
+    <link rel="canonical" href="https://eslisilvaadvocacia.com.br/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eslisilvaadvocacia.com.br/">
     <meta property="og:title" content="Dr. Esli Silva - Advogado Previdenciário">
     <meta property="og:description" content="Especialista em demandas previdenciárias com atuação em todo território nacional. Mais de 7 anos de experiência.">
-    <meta property="og:image" content="img/logo.png">
-    
+    <meta property="og:image" content="https://eslisilvaadvocacia.com.br/img/logo.png">
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Dr. Esli Silva - Advogado Previdenciário">
     <meta name="twitter:description" content="Especialista em demandas previdenciárias com atuação em todo território nacional.">
-    
+    <meta name="twitter:image" content="https://eslisilvaadvocacia.com.br/img/logo.png">
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="img/logo.png">
-    
-    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" href="img/logo.png">
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="img/perfil.jpeg">
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Dados Estruturados (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://eslisilvaadvocacia.com.br/#organization",
+          "name": "Esli Silva Advocacia",
+          "url": "https://eslisilvaadvocacia.com.br",
+          "telephone": "+5527999248019",
+          "email": "esli.silvadvogado@gmail.com",
+          "description": "Escritório de advocacia especializado em Direito Previdenciário, com atendimento presencial e online em todo o Brasil.",
+          "areaServed": { "@type": "Country", "name": "Brasil" },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços Previdenciários",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Recursos e revisões de benefícios negados pelo INSS" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acompanhamento de pedidos em análise pelo INSS" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Planejamento Previdenciário" } }
+            ]
+          },
+          "sameAs": [
+            "https://www.instagram.com/eslisilva_adv/",
+            "https://www.facebook.com/esli.silva.18",
+            "https://www.linkedin.com/in/esli-silva-09947b246/"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://eslisilvaadvocacia.com.br/#pessoa",
+          "name": "Esli Silva",
+          "honorificPrefix": "Dr.",
+          "jobTitle": "Advogado Previdenciário",
+          "description": "Advogado especialista em Direito Previdenciário com mais de 7 anos de experiência. OAB/ES nº 36.432.",
+          "worksFor": { "@id": "https://eslisilvaadvocacia.com.br/#organization" },
+          "sameAs": ["https://www.linkedin.com/in/esli-silva-09947b246/"]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
     <!-- Header/Navegação -->
     <header class="header">
         <div class="container">
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Navegação principal">
                 <div class="logo">
                     <img src="img/logo.png" alt="Dr. Esli Silva - Advogado">
                 </div>
@@ -51,20 +102,22 @@
                     <li><a href="#faq">FAQ</a></li>
                     <li><a href="#contato" class="btn-contato">Fale Conosco</a></li>
                 </ul>
-                <div class="menu-toggle">
+                <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </nav>
         </div>
     </header>
+
+    <main id="conteudo-principal">
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <!-- Fundo com imagem do perfil (nítida) -->
         <div class="hero-background">
-            <img src="img/perfil.jpeg" alt="" class="hero-bg-image">
+            <img src="img/perfil.jpeg" alt="" class="hero-bg-image" width="1024" height="1280">
         </div>
         <div class="hero-overlay"></div>
         
@@ -109,7 +162,7 @@
         <div class="container">
             <div class="sobre-content">
                 <div class="sobre-image">
-                    <img src="img/perfil.jpeg" alt="Dr. Esli Silva">
+                    <img src="img/perfil.jpeg" alt="Dr. Esli Silva" loading="lazy" width="1024" height="1280">
                 </div>
                 <div class="sobre-text">
                     <h2 class="section-title">Sobre o Dr. Esli Silva</h2>
@@ -173,11 +226,11 @@
                 <div class="diferencial-item">
                     <div class="diferencial-number">05</div>
                     <h3>Honorários Justos</h3>
-                    <p>Trabalhamos com honorários de êxito. Só concluimos quando você recebe seu benefício.</p>
+                    <p>Trabalhamos com honorários de êxito. Só concluímos quando você recebe seu benefício.</p>
                 </div>
                 <div class="diferencial-item">
                     <div class="diferencial-number">06</div>
-                    <h3>Atuação Nacional e  Internacional</h3>
+                    <h3>Atuação Nacional e Internacional</h3>
                     <p>Atendemos clientes em todo o Brasil e exterior, com consultas presenciais e online.</p>
                 </div>
             </div>
@@ -240,11 +293,10 @@
             <p class="section-subtitle">Confira alguns dos nossos resultados de sucesso</p>
             <div class="provas-grid">
                 <div class="prova-card">
-                    <img src="img/prova-social-1.jpeg" alt="Prova Social 1">
+                    <img src="img/prova-social-1.jpeg" alt="Resultado favorável obtido pelo Dr. Esli Silva para cliente previdenciário" loading="lazy" width="816" height="1232">
                 </div>
                 <div class="prova-card">
-                    <img src="img/prova-social-2.jpeg" alt="Prova Social 2">
-                </div>
+                    <img src="img/prova-social-2.jpeg" alt="Decisão judicial de benefício conquistado pelo Dr. Esli Silva" loading="lazy" width="1024" height="1280">
                 </div>
             </div>
         </div>
@@ -257,73 +309,73 @@
             <p class="section-subtitle">Tire suas dúvidas sobre processos previdenciários</p>
             <div class="faq-container">
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
                         <span>Como saber se tenho direito a algum benefício do INSS?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-1" role="region" aria-labelledby="faq-btn-1">
                         <p>Para saber se você tem direito a um benefício previdenciário, é necessário analisar seu histórico de contribuições, sua idade e sua condição de saúde. Agende uma consulta e faremos uma análise completa do seu caso.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
                         <span>Meu benefício foi negado pelo INSS. O que fazer?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-2" role="region" aria-labelledby="faq-btn-2">
                         <p>Se seu benefício foi negado, você tem o direito de recorrer da decisão. Podemos analisar os motivos da negativa e buscar reverter essa decisão através de recursos administrativos ou ação judicial.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
                         <span>Quanto custa contratar um advogado previdenciário?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-3" role="region" aria-labelledby="faq-btn-3">
                         <p>Trabalhamos com honorários de êxito, ou seja, você só paga se ganhar o processo. O valor é um percentual sobre o benefício recebido, conforme estabelecido em contrato. A primeira consulta é gratuita!</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
                         <span>Quanto tempo demora um processo previdenciário?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-4" role="region" aria-labelledby="faq-btn-4">
                         <p>O tempo varia dependendo da complexidade do caso e da via escolhida (administrativa ou judicial). Processos administrativos podem levar de 3 a 6 meses, enquanto processos judiciais podem levar de 1 a 3 anos. Trabalhamos para agilizar ao máximo seu processo.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
                         <span>Posso fazer planejamento previdenciário mesmo jovem?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-5" role="region" aria-labelledby="faq-btn-5">
                         <p>Sim! O planejamento previdenciário é recomendado em qualquer idade. Quanto antes você começar, melhores serão as estratégias para maximizar o valor do seu benefício futuro e garantir uma aposentadoria tranquila.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Vocês atendem em todo o Brasil e Exteior?</span>
-                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-6" id="faq-btn-6">
+                        <span>Vocês atendem em todo o Brasil e Exterior?</span>
+                        <svg class="faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
                     </button>
-                    <div class="faq-answer">
+                    <div class="faq-answer" id="faq-6" role="region" aria-labelledby="faq-btn-6">
                         <p>Sim! Atendemos clientes em todo território nacional e Internacional. Oferecemos consultas presenciais e online, adaptando-nos às suas necessidades e localização.</p>
                     </div>
                 </div>
@@ -375,16 +427,20 @@
                 <div class="contato-form">
                     <form id="contact-form">
                         <div class="form-group">
-                            <input type="text" name="nome" placeholder="Nome completo" required>
+                            <label for="nome" class="sr-only">Nome completo</label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome completo" required autocomplete="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" placeholder="E-mail" required>
+                            <label for="email" class="sr-only">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="E-mail" required autocomplete="email">
                         </div>
                         <div class="form-group">
-                            <input type="tel" name="telefone" placeholder="Telefone" required>
+                            <label for="telefone" class="sr-only">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required autocomplete="tel">
                         </div>
                         <div class="form-group">
-                            <textarea name="mensagem" rows="5" placeholder="Descreva brevemente seu caso" required></textarea>
+                            <label for="mensagem" class="sr-only">Descreva seu caso</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva brevemente seu caso" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Enviar Mensagem</button>
                     </form>
@@ -393,15 +449,17 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="img/sobre.jpeg" alt="Dr. Esli Silva">
+                    <img src="img/logo.png" alt="Dr. Esli Silva - Advogado" width="120" height="120">
                     <p>Advogado Especialista em Direito Previdenciário</p>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Navegação do rodapé">
                     <h4>Links Rápidos</h4>
                     <ul>
                         <li><a href="#home">Início</a></li>
@@ -409,22 +467,22 @@
                         <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#contato">Contato</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="footer-social">
                     <h4>Redes Sociais</h4>
                     <div class="social-icons">
-                        <a href="https://www.instagram.com/eslisilva_adv/" aria-label="Instagram" class="social-instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://www.instagram.com/eslisilva_adv/" aria-label="Instagram" class="social-instagram" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                             </svg>
                         </a>
-                        <a href="https://www.facebook.com/esli.silva.18" aria-label="Facebook" class="social-facebook">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://www.facebook.com/esli.silva.18" aria-label="Facebook" class="social-facebook" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/esli-silva-09947b246/" aria-label="LinkedIn" class="social-linkedin">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <a href="https://www.linkedin.com/in/esli-silva-09947b246/" aria-label="LinkedIn" class="social-linkedin" target="_blank" rel="noopener noreferrer">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                             </svg>
                         </a>
@@ -434,6 +492,9 @@
             <div class="footer-bottom">
                 <p>&copy; 2026 Dr. Esli Silva - Todos os direitos reservados. OAB/ES Nº 36.432</p>
             </div>
+        </div>
+        <div class="site-footer">
+            <p>Desenvolvido por <a href="https://diegodev.dev.br" target="_blank" rel="noopener noreferrer">Diego Batista</a></p>
         </div>
     </footer>
 
@@ -456,15 +517,6 @@
         </svg>
     </button>
 
-    <script src="index.js"></script>
-    <footer class="site-footer">
-  <p>
-    Desenvolvido por
-    <a href="https://diegodev.dev.br" target="_blank" rel="noopener noreferrer">
-      Diego Batista
-    </a>
-  </p>
-</footer>
-
+    <script src="index.js" defer></script>
 </body>
 </html>
