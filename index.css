@@ -203,7 +203,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center top;
     transition: transform 0.3s ease-out;
 }
 
@@ -1191,14 +1191,14 @@ img {
 /* Ajuste de posição da imagem para telas largas */
 @media (min-width: 1400px) {
     .hero-bg-image {
-        object-position: center 20%;
+        object-position: center top;
     }
 }
 
 /* Tablets grandes e laptops pequenos */
 @media (max-width: 1024px) {
     .hero-bg-image {
-        object-position: center 10%;
+        object-position: center top;
     }
 
     .container {
@@ -1272,7 +1272,7 @@ img {
     }
 
     .hero-bg-image {
-        object-position: center 5%;
+        object-position: center top;
     }
 
     .hero-center-content {
@@ -1513,7 +1513,7 @@ img {
 
     /* Hero Section - Smartphones */
     .hero-bg-image {
-        object-position: center 0%;
+        object-position: center top;
     }
 
     .hero-center-content {
